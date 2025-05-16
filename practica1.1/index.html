@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Práctica 2 | Ibero Puebla</title>
+        <title>Práctica 1 | Ibero Puebla</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -37,43 +37,244 @@
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
                             <div class="my-5 text-center text-xl-start">
                                 <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
-                                <h1 class="display-8 fw-bolder text-white mb-2">Introducción a Ing. Mecatrónica - Práctica 2</h1>
-                                <p class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Introduccion a Ing. Mecatrónica</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </header>
 
-            <!-- Seccion PRACTICA 2 -->
-            <section class="py-3" id="practica-2">
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
                 <div class="container px-5 my-2">
+                    <!-- Post header-->
                     <header class="mb-4">
-                        <h1 class="fw-bolder mb-1">Práctica 2: Diseño y Control de Sistemas Robóticos</h1>
-                        <p class="text-muted fst-italic mt-2 mb-2">Fecha: 15 05, 2025</p>
-                        <a class="badge bg-primary text-decoration-none link-light">Robótica</a>
-                        <a class="badge bg-primary text-decoration-none link-light">Control</a>
-                        <a class="badge bg-primary text-decoration-none link-light">Sistemas Embebidos</a>
-                        <a class="badge bg-primary text-decoration-none link-light">Electrónica</a>
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Comparacion de microcontroladores</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/Imagen de WhatsApp 2025-02-01 a las 15.18.02_f0378ee1.jpg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Brian Carl Simpson y Reyes & Hector Ojeda Serafio</div>
+                                <div class="text-muted">Ingenieria Mectronica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: 02 08, 2025</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Attiny</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Esp32</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+                        
+
                     </header>
-                    <p class="fs-6 mb-4">
-                        En esta práctica se exploraron conceptos avanzados de diseño y control de sistemas robóticos, incluyendo cinemática directa e inversa, control PID y estrategias de planificación de movimiento. Se utilizó un brazo robótico para evaluar estos principios en un entorno controlado, midiendo precisión, velocidad y eficiencia en tareas de manipulación.
-                    </p>
-                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/practica2_robotica.jpg" alt="Brazo Robótico" /></figure>
-                    <p class="fs-6 mb-4">
-                        Los resultados mostraron que el uso de controladores avanzados puede mejorar significativamente el rendimiento de los sistemas robóticos, reduciendo errores y optimizando tiempos de respuesta. Esta práctica también destacó la importancia de la simulación previa al despliegue físico, utilizando herramientas como ROS y Gazebo.
-                    </p>
-                    <p class="fs-6 mb-4">Descargar código del controlador PID: <a href="files/control_pid.ino">control_pid.ino</a></p>
                 </div>
             </section>
 
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/OIP.jpg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">En esta práctica se realizó una comparación entre los microcontroladores Arduino Uno, ESP32 y ATtiny ejecutando cuatro códigos idénticos en simulación y en hardware físico. Se evaluó su desempeño en términos de velocidad de ejecución, consumo energético, facilidad de programación y compatibilidad con diferentes entornos de desarrollo.</p>
+                        
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">Los microcontroladores son la base de numerosos sistemas embebidos, utilizados en aplicaciones que van desde la automatización hasta el Internet de las Cosas (IoT). Para determinar cuál es más adecuado en diferentes situaciones, es fundamental comparar su rendimiento bajo las mismas condiciones.</p>
+                        <p class="fs-6 mb-4">En esta práctica se evaluará el desempeño del Arduino Uno, ESP32 y ATtiny mediante la ejecución de cuatro códigos idénticos. Se analizarán aspectos como velocidad de procesamiento, consumo energético y facilidad de implementación, tanto en simulación con Wokwi como en pruebas con hardware real</p>
+                        <p class="fs-6 mb-4">Con este análisis, se pretende identificar las ventajas y limitaciones de cada microcontrolador, permitiendo seleccionar la mejor opción según los requerimientos específicos de un proyecto.</p>
+                        
+                      
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">Microcontroladores: Arduino Uno, ESP32 y ATtiny.
+                        <p class="fs-6 mb-4">LEDs: 1 por cada microcontrolador..</p>
+                        <p class="fs-6 mb-4">Resistencias: 220Ω para limitar la corriente de los LEDs.</p>
+                        <p class="fs-6 mb-4">Botones pulsadores: Para las pruebas de control con entrada digital.</p>
+                        <p class="fs-6 mb-4">Resistencias de pull-down: 10kΩ para los botones.</p>
+                        <p class="fs-6 mb-4">Protoboard: Para conexiones temporales.</p>
+                        <p class="fs-6 mb-4">Cables jumper: Macho-macho y macho-hembra.</p>
+                        <p class="fs-6 mb-4">Computadora: Para programación y simulación.</p>
+                        <p class="fs-6 mb-4">Software de simulación: Wokwi..</p>
+                        <p class="fs-6 mb-4">Cables USB: Para la conexión y programación de Arduino y ESP32.</p>
+
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">En esta práctica se compararon los microcontroladores Arduino Uno, ESP32 y ATtiny ejecutando cuatro códigos básicos en simulación y hardware físico. Los programas consistieron en encender un LED, hacer que parpadee, encenderlo con un botón y controlarlo con un botón mediante una condición if.</p>
+                        <p class="fs-6 mb-4">Para validar el funcionamiento, primero se realizaron pruebas en Wokwi, donde se analizaron tiempos de respuesta y compatibilidad. Luego, los códigos fueron cargados en los dispositivos físicos, midiendo su rendimiento en condiciones reales. Finalmente, se compararon aspectos como velocidad de ejecución, consumo de energía y facilidad de programación, permitiendo identificar las fortalezas y limitaciones de cada microcontrolador..</p>
+                        
+                           <p id="simulacion">
+    <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+    <p class="fs-6 mb-4">
+        Para evaluar el comportamiento de los microcontroladores antes de implementarlos físicamente, se utilizó la plataforma de simulación Wokwi. 
+        Esta herramienta permite probar códigos en un entorno virtual, replicando el funcionamiento real de dispositivos como el Arduino Uno, ESP32 y ATtiny.
+    </p>
+    <p class="fs-6 mb-4">
+        En la simulación, se configuraron los circuitos con LEDs, resistencias y botones, asegurando que los cuatro programas funcionaran correctamente. 
+        Se analizaron aspectos como tiempos de respuesta, consumo de memoria y compatibilidad del código con cada microcontrolador. 
+        Además, Wokwi facilitó la depuración y ajuste de los programas antes de cargarlos en hardware real, optimizando el proceso de desarrollo y reduciendo posibles errores en la implementación física.
+    </p>
+
+    <!-- Contenedor de imágenes -->
+    <div class="row text-center">
+        <!-- Imágenes del código -->
+        <div class="col-md-3 mb-3">
+            <img class="img-fluid rounded" src="img/codigo1.jpg" alt="Código 1">
+        </div>
+        <div class="col-md-3 mb-3">
+            <img class="img-fluid rounded" src="img/codigo2.jpg" alt="Código 2">
+        </div>
+        <div class="col-md-3 mb-3">
+            <img class="img-fluid rounded" src="img/codigo3.jpg" alt="Código 3">
+        </div>
+        <div class="col-md-3 mb-3">
+            <img class="img-fluid rounded" src="img/codigo4.jpg" alt="Código 4">
+        </div>
+
+        <!-- Imágenes de la simulación -->
+        <div class="col-md-4 mb-3">
+            <img class="img-fluid rounded" src="img/arduinof.jpg" alt="Simulación 1">
+        </div>
+        <div class="col-md-4 mb-3">
+            <img class="img-fluid rounded" src="img/attinyf1.jpg" alt="Simulación 2">
+        </div>
+        <div class="col-md-4 mb-3">
+            <img class="img-fluid rounded" src="img/esp32f.png" alt="Simulación 3">
+        </div>
+    </div>
+</p>
+
+                    
+                            <p id="diseño">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
+                            <p class="fs-6 mb-4">El diseño del circuito se realizó de manera modular para adaptarse a los tres microcontroladores: Arduino Uno, ESP32 y ATtiny. Se usó una protoboard para facilitar las conexiones y permitir cambios rápidos entre dispositivos.</p>
+                            <p class="fs-6 mb-4">Cada circuito incluyó un LED con una resistencia de 220Ω, conectado a un pin de salida digital del microcontrolador. Para los ejercicios con botones, se agregaron pulsadores con resistencias de pull-down de 10kΩ, asegurando lecturas estables en las entradas digitales.</p>
+                            
+                            <p id="construccion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
+                            <p class="fs-6 mb-4">Para la construcción del circuito, primero se organizaron los componentes en una protoboard, asegurando que cada microcontrolador tuviera una configuración funcional y ordenada. Se conectaron los LEDs con sus resistencias de 220Ω a los pines digitales de salida, y los botones con resistencias de pull-down de 10kΩ a las entradas digitales.</p>
+                            <p class="fs-6 mb-4">Arduino Uno y ESP32 se conectaron por USB a la computadora.</p>
+                            <p class="fs-6 mb-4">ATtiny requirió un programador AVR para la carga del código y una alimentación externa de 5V.</p>
+                            <p class="fs-6 mb-4">Tras realizar las conexiones, se cargaron los códigos y se probaron individualmente, verificando que los LEDs encendieran, parpadearan y respondieran correctamente a los botones según la programación.</p>
+                            
+<section id="resultados">
+    <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+    <p class="fs-6 mb-4">
+        Tras la simulación y pruebas en hardware, se observaron diferencias en el desempeño de los microcontroladores. 
+        <strong>Arduino Uno</strong> mostró una ejecución estable y facilidad de programación, pero con menor capacidad de procesamiento. 
+        <strong>ESP32</strong>, gracias a su mayor velocidad y conectividad, permitió tiempos de respuesta más rápidos, aunque su consumo energético fue mayor. 
+        <strong>ATtiny</strong>, al ser un microcontrolador compacto y eficiente, cumplió con las tareas básicas, pero con limitaciones en memoria y funcionalidad avanzada.
+    </p>
+    <p class="fs-6 mb-4">
+        Los cuatro códigos funcionaron correctamente en cada microcontrolador, aunque el <strong>ESP32</strong> mostró menor latencia en la respuesta de los botones y el parpadeo del LED. 
+        En contraste, <strong>ATtiny</strong> presentó tiempos de ejecución más prolongados debido a su menor frecuencia de reloj. 
+        Estos resultados permiten concluir que la elección del microcontrolador depende del equilibrio entre rendimiento, consumo y facilidad de implementación.
+    </p>
+</section>
+
+<section id="videos">
+    <h2 class="fw-bolder mb-4 mt-5 fs-5">- Videos de la Práctica -</h2>
+    
+    <p class="fs-6 mb-4">
+        A continuación, se presentan cuatro videos que documentan el desarrollo y pruebas realizadas en la simulación y hardware físico:
+    </p>
+    
+    <ul class="fs-6 mb-4">
+        <li><strong>Video 1:</strong> Arduino Uno con el primer código (Encender un LED).</li>
+        <li><strong>Video 2:</strong> Arduino Uno con el segundo código (Parpadear un LED).</li>
+        <li><strong>Video 3:</strong> ESP32 con el tercer código (Encender un LED con un botón).</li>
+        <li><strong>Video 4:</strong> ATtiny con el cuarto código (Encender y apagar un LED con un botón y un if).</li>
+    </ul>
+
+    <figure class="mb-4" align="center">
+        <video width="80%" controls>
+            <source src="video/arduinov.mp4" type="video/mp4">
+        </video>
+        <figcaption>Arduino Uno - Encender un LED</figcaption>
+    </figure>
+
+    <figure class="mb-4" align="center">
+        <video width="80%" controls>
+            <source src="video/arduinov1.mp4" type="video/mp4">
+        </video>
+        <figcaption>Arduino Uno - Parpadear un LED</figcaption>
+    </figure>
+
+    <figure class="mb-4" align="center">
+        <video width="80%" controls>
+            <source src="video/esp321.mp4" type="video/mp4">
+        </video>
+        <figcaption>ESP32 - Encender un LED con un botón</figcaption>
+    </figure>
+
+    <figure class="mb-4" align="center">
+        <video width="80%" controls>
+            <source src="video/attinyv.mp4" type="video/mp4">
+        </video>
+        <figcaption>ATtiny - Encender y apagar un LED con un botón y un if</figcaption>
+    </figure>
+</section>
+
+
+                       <section id="conclusion">
+    <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusión -</h2>
+    <p class="fs-6 mb-4">
+        A través de esta práctica, se compararon los microcontroladores <strong>Arduino Uno, ESP32 y ATtiny</strong> ejecutando los mismos códigos, 
+        tanto en simulación con <strong>Wokwi</strong> como en hardware real. Se observó que cada microcontrolador tiene ventajas y limitaciones dependiendo 
+        de su capacidad de procesamiento, consumo energético y facilidad de programación.
+    </p>
+    <p class="fs-6 mb-4">
+        <strong>Arduino Uno</strong> destacó por su simplicidad y estabilidad, siendo ideal para proyectos educativos y prototipos básicos. 
+        <strong>ESP32</strong> demostró un mejor rendimiento en términos de velocidad y conectividad, pero con un mayor consumo energético. 
+        <strong>ATtiny</strong>, al ser un microcontrolador compacto, cumplió con las tareas esenciales pero con limitaciones en memoria y número de pines.
+    </p>
+    <p class="fs-6 mb-4">
+        Los resultados confirman que la elección del microcontrolador depende del equilibrio entre potencia, eficiencia y requisitos del proyecto. 
+        La simulación previa en <strong>Wokwi</strong> facilitó la depuración de código y optimización de los circuitos, reduciendo errores antes de la implementación física.
+    </p>
+    
+    <h3 class="fw-bolder mt-5 fs-5">- Tabla Comparativa -</h3>
+    <p class="fs-6 mb-4">
+        A continuación, se presenta una tabla comparativa con los principales aspectos evaluados en cada microcontrolador:
+    </p>
+
+    <figure class="mb-4" align="center">
+        <img src="img/tabla_comparativa.jpg" alt="Tabla comparativa de los microcontroladores" width="80%">
+        <figcaption>Tabla comparativa de rendimiento y características de Arduino Uno, ESP32 y ATtiny</figcaption>
+    </figure>
+</section>
+
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">Arduino. (s.f.). Arduino Uno Rev3. Arduino Documentation. Recuperado el 8 de febrero de 2025, de https://docs.arduino.cc/hardware/uno-rev3.</p>
+                        <p class="fs-6 mb-4">Espressif Systems. (s.f.). ESP-IDF Programming Guide. Espressif Documentation. Recuperado el 8 de febrero de 2025, de https://docs.espressif.com/projects/esp-idf/en/latest/esp32/.</p>
+                        <p class="fs-6 mb-4">Microchip Technology Inc. (2006). ATtiny25/45/85 datasheet (Doc. 2586). Recuperado el 8 de febrero de 2025, de https://ww1.microchip.com/downloads/en/DeviceDoc/doc2586.pdf.</p>
+                        
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                         <p class="fs-6 mb-4">Descargar codigo para prender un led: <a href="files/Prender_un_led.ino">codigo.ino</a> </p>
+                    <p class="fs-6 mb-4">Descargar codigo para parpadear un led: <a href="files/Parpadeo_de_un_led.ino">codigo.ino</a> </p>
+                    <p class="fs-6 mb-4">Descargar codigo para prender un led con un boton: <a href="files/Prender_un_led_con_un_boton_.ino">codigo.ino</a> </p>
+                    <p class="fs-6 mb-4">Descargar codigo para prender un led con un boton e condicional if: <a href="files/Prender_un_led_con_boton_if.ino">codigo.ino</a> </p>
+                       
+            </section>
+
+            
         </main>
 
         <!-- Footer-->
         <footer class="bg-dark py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2025</div></div>
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
                     <div class="col-auto">
                         <a class="link-light small" href="#!">Privacy</a>
                         <span class="text-white mx-1">&middot;</span>
@@ -90,4 +291,4 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
-</html>
+</html> 
