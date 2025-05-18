@@ -111,21 +111,19 @@
                         <p class="fs-6 mb-4">En esta práctica, configuramos tambien dos ESP32C6 para comunicarse usando I2C. Un Esp32C6 Maestro envía un bloque de datos al ESP32C6 Esclavo, que los recibe y los devuelve cuando el maestro los solicita. La comunicación se monitorea por el puerto Serial para verificar que todo funcione correctamente.</p>
                         <p class="fs-6 mb-4">El Maestro inicia la comunicación con la dirección 0x08, llena un buffer de un byte con valores del 0 al 255 y los envía al Esclavo. Luego mide el tiempo de ida y vuelta, solicita los datos y los imprime en el Serial. El Esclavo, configurado también con la dirección 0x08, guarda los datos recibidos y los devuelve cuando el Maestro los pide, mostrando un mensaje por Serial cada vez que responde. </p>
                         <p class="fs-6 mb-4 text-center">-Código Maestro ESP32-C6</p>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ARD.1.jpg" alt="..." /></figure>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ARD.2.jpg" alt="..." /></figure>
-
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Mesp.jpg" alt="..." /></figure>
+                      
                         <p class="fs-6 mb-4 text-center">-Código Esclavo ESP32-C6</p>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/EARD.jpg" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Eesp.jpg" alt="..." /></figure>
 
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >Attiny85</h2>
-                        <p class="fs-6 mb-4"> </p>
-                        <p class="fs-6 mb-4"> </p>
+                        <p class="fs-6 mb-4">En esta práctica, configuramos dos ATtiny85 para comunicarse entre sí mediante el protocolo I2C, donde uno actúa como maestro y el otro como esclavo. Además, utilizamos SoftwareSerial en el maestro para enviar la información recibida a otro dispositivo, como una computadora o un microcontrolador.</p>
+                        <p class="fs-6 mb-4">El ATtiny85 maestro envía un dato (0x42) al esclavo a través de I2C y luego solicita una respuesta. Si el esclavo responde con un dato, el maestro lo recibe y lo muestra en el puerto serial en formato hexadecimal. Todo este proceso se repite cada 500 milisegundos, asegurando una comunicación continua entre ambos microcontroladores.</p>
                         <p class="fs-6 mb-4 text-center">-Código Maestro Attiny85</p>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ARD.1.jpg" alt="..." /></figure>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ARD.2.jpg" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Matt.1.jpg" alt="..." /></figure>
 
                         <p class="fs-6 mb-4 text-center">-Código Esclavo Attiny85</p>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/EARD.jpg" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Matt.2.jpg" alt="..." /></figure>
                     
                     <p id="imagenes">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Imagenes -</h2>
