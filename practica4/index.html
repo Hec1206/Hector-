@@ -120,7 +120,9 @@
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
                         <p class="fs-6 mb-4">En la Primera fase, desde Python se estableció enlace con el broker público <code>test.mosquitto.org</code>, enviando 10000 mensajes al tópico <code>"elementos2/Hector"</code> y midiendo la latencia de ida y vuelta. Se calculó la media, la desviación estándar y se trazó un gráfico con estas métricas.</p>
-                        
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/parte 1.jpg" alt="..." /></figure>
+
+
                         <p class="fs-6 mb-4">En la Segunda fase, el ESP32 envió 5 mensajes al mismo tópico usando <code>millis()</code> para medir latencia, imprimiendo resultados en el puerto serial y calculando las estadísticas.</p>
                         <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/WhatsApp Image 2025-05-13 at 9.20.51 PM (1).jpeg" alt="..." /></figure>
 
@@ -130,7 +132,8 @@
                         </video></figure>
                         
                         <p class="fs-6 mb-4">En la Cuarta fase, el ESP32 publicó cada segundo las lecturas del potenciómetro en el tópico y las visualizó en tiempo real por serial.</p>
-                        
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Servo.jpg" alt="..." /></figure>
+
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
